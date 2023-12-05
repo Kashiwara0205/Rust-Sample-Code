@@ -1,0 +1,8 @@
+version: '3'
+services:
+  rust:
+    build: rust_samples
+    container_name: 'rust'
+    tty: true
+    volumes:
+      - "./rust_samples:/rust_samples"

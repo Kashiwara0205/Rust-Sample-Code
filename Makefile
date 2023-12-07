@@ -6,3 +6,4 @@ unit_test:
 
 project:
 	docker exec -ti rust bash -c "cargo new $(ARG) --lib --vcs none"
+	docker exec -ti rust bash -c "cd $(ARG); touch .gitignore; echo -e 'target' >> .gitignore"
